@@ -15,7 +15,6 @@ import './App.css';
 function App() {
   const location = useLocation();
   
-  // Re-observe .reveal elements whenever the page route changes
   useScrollReveal([location.pathname]);
 
   return (

@@ -1,14 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Terminal, Code, Cpu, ShieldCheck } from 'lucide-react';
 
 export default function Hero() {
-  const handleScrollClick = (id) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="home" className="hero-section">
       <div className="container grid-2">
@@ -22,18 +16,18 @@ export default function Hero() {
             Modern websites, local &amp; technical SEO, and digital solutions tailored to help businesses of all sizes establish a premium online presence.
           </p>
           <div className="hero-buttons">
-            <button 
-              onClick={() => handleScrollClick('contact')} 
+            <Link 
+              to="/contact" 
               className="btn btn-primary"
             >
               🚀 Get a Free Quote
-            </button>
-            <button 
-              onClick={() => handleScrollClick('portfolio')} 
+            </Link>
+            <Link 
+              to="/portfolio" 
               className="btn btn-secondary"
             >
               💼 View Portfolio
-            </button>
+            </Link>
           </div>
         </div>
 
