@@ -1,6 +1,6 @@
 import React from 'react';
-import Services from '../sections/Services';
-import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
+import Services from '../sections/Services/Services';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function ServicesPage() {
   return (

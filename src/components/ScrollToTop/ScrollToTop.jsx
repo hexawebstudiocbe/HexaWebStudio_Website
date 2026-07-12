@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUp } from 'lucide-react';
+import '../FloatingWhatsapp/FloatingWhatsapp.css';
 
 export default function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);

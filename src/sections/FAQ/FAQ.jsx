@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import './FAQ.css';
 
 export default function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);

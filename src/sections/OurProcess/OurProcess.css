@@ -1,0 +1,116 @@
+/* ==========================================
+   Our Process Section
+   ========================================== */
+.process-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.process-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: var(--dark-border);
+  top: 0;
+  z-index: 1;
+}
+
+.process-step {
+  display: flex;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.process-step:last-child {
+  margin-bottom: 0;
+}
+
+.process-node {
+  width: 48px;
+  height: 48px;
+  background-color: var(--primary);
+  color: var(--white);
+  border: 4px solid var(--dark-bg);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+}
+
+.process-content-wrapper {
+  width: 50%;
+  padding: 0 40px;
+}
+
+.process-step:nth-child(odd) .process-content-wrapper {
+  margin-left: auto;
+}
+
+.process-step:nth-child(even) .process-content-wrapper {
+  margin-right: auto;
+  text-align: right;
+}
+
+.process-card {
+  background-color: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-normal);
+}
+
+.process-card:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.process-step-title {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--white);
+}
+
+.process-step-desc {
+  font-size: 0.9rem;
+  color: var(--dark-text-muted);
+}
+
+@media (max-width: 768px) {
+  .process-timeline::before {
+    left: 24px;
+    transform: none;
+  }
+
+  .process-node {
+    left: 0;
+    transform: none;
+  }
+
+  .process-step {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .process-content-wrapper {
+    width: 100%;
+    padding: 0 0 0 60px;
+  }
+
+  .process-step:nth-child(even) .process-content-wrapper {
+    text-align: left;
+  }
+}

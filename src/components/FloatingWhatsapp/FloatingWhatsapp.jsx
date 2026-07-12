@@ -1,8 +1,9 @@
 import React from 'react';
+import './FloatingWhatsapp.css';
 
 export default function FloatingWhatsapp() {
   // Pre-filled WhatsApp message URL
-  const whatsappUrl = "https://wa.me/1234567890?text=Hi%20Hexaweb!%20I%20visited%20your%20website%20and%20would%20like%20to%20get%20a%20free%20consultation%20and%20quote.";
+  const whatsappUrl = "https://wa.me/919345541741?text=Hi%20Hexaweb!%20I%20visited%20your%20website%20and%20would%20like%20to%20get%20a%20free%20consultation%20and%20quote.";
 
   return (
     <a

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Laptop, Search, Palette, Check } from 'lucide-react';
+import { Laptop, Search, Palette, Check, Code } from 'lucide-react';
+import './Services.css';
 
 export default function Services() {
   const serviceList = [
@@ -23,6 +24,17 @@ export default function Services() {
         "On-Page Content SEO",
         "Technical Speed Optimization",
         "Keyword & Content Strategies"
+      ]
+    },
+    {
+      icon: <Code size={32} />,
+      title: "Full-Stack Application Development",
+      desc: "We build robust, scalable, and secure full-stack web applications tailored to your business needs.",
+      features: [
+        "Business Applications",
+        "Final Year Projects",
+        "Admin Dashboards",
+        "REST APIs"
       ]
     },
   ];

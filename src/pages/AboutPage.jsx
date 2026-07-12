@@ -1,6 +1,6 @@
 import React from 'react';
-import About from '../sections/About';
-import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
+import About from '../sections/About/About';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function AboutPage() {
   return (

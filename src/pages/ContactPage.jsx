@@ -1,6 +1,6 @@
 import React from 'react';
-import Contact from '../sections/Contact';
-import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
+import Contact from '../sections/Contact/Contact';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function ContactPage() {
   return (

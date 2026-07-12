@@ -1,0 +1,70 @@
+/* ==========================================
+   Services Section & Cards
+   ========================================== */
+.service-card {
+  background-color: var(--light-card);
+  border: 1px solid var(--light-border);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.service-icon-box {
+  color: var(--primary);
+  background-color: var(--primary-light);
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  transition: var(--transition-normal);
+}
+
+.service-card:hover .service-icon-box {
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-glow);
+}
+
+.service-title {
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+}
+
+.service-desc {
+  font-size: 0.95rem;
+  color: var(--light-text-muted);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.service-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.service-feature svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}

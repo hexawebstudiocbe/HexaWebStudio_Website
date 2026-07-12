@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Laptop, Search, ArrowRight } from 'lucide-react';
-import Hero from '../sections/Hero';
-import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
+import { Laptop, Search, ArrowRight, Code } from 'lucide-react';
+import Hero from '../sections/Hero/Hero';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function HomePage() {
   return (
@@ -21,7 +21,7 @@ export default function HomePage() {
             </p>
           </div>
           
-          <div className="grid-2">
+          <div className="grid-3">
             <div className="service-card reveal reveal-slide-right">
               <div className="service-icon-box">
                 <Laptop size={32} />
@@ -46,6 +46,20 @@ export default function HomePage() {
               </p>
               <Link to="/services" className="btn btn-outline teaser-btn">
                 Explore SEO Services
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+            
+            <div className="service-card reveal reveal-slide-up">
+              <div className="service-icon-box">
+                <Code size={32} />
+              </div>
+              <h3 className="service-title">Full-Stack Application Development</h3>
+              <p className="service-desc">
+                We build robust, scalable, and secure full-stack web applications tailored to your business needs.
+              </p>
+              <Link to="/services" className="btn btn-outline teaser-btn">
+                Explore App Dev
                 <ArrowRight size={16} />
               </Link>
             </div>

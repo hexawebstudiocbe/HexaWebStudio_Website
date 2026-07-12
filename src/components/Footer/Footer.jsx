@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoImg from '../assets/logo.png';
+import logoImg from '../../assets/logo.png';
 import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react';
+import './Footer.css';
 
 const InstagramIcon = ({ size = 20 }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

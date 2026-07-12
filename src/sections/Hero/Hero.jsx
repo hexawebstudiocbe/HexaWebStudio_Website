@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Terminal, Code, Cpu, ShieldCheck } from 'lucide-react';
+import './Hero.css';
 
 export default function Hero() {
   return (
@@ -48,7 +49,6 @@ export default function Hero() {
               <p style={{ textIndent: '20px' }}>team: <span style={{ color: '#fb923c' }}>"6 Developers"</span>,</p>
               <p style={{ textIndent: '20px' }}>philosophy: <span style={{ color: '#fb923c' }}>"Quality &amp; Performance"</span>,</p>
               <p style={{ textIndent: '20px' }}>seoFirst: <span style={{ color: '#c084fc' }}>true</span>,</p>
-              <p style={{ textIndent: '20px', color: '#e2e8f0' }}>stack: [<span style={{ color: '#fb923c' }}>"React"</span>, <span style={{ color: '#fb923c' }}>"Node.js"</span>, <span style={{ color: '#fb923c' }}>"SEO"</span>]</p>
               <p style={{ color: '#f472b6' }}>&#125;;</p>
               <br />
               <p style={{ color: '#34d399' }}>// Deploying high-performance websites...</p>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Shield, Award, Cpu } from 'lucide-react';
+import './About.css';
 
 export default function About() {
   const highlights = [

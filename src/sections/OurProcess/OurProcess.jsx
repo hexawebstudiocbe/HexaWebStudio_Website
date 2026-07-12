@@ -1,4 +1,5 @@
 import React from 'react';
+import './OurProcess.css';
 
 export default function OurProcess() {
   const steps = [

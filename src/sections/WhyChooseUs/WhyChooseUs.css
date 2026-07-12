@@ -1,0 +1,31 @@
+/* ==========================================
+   Why Choose Us Section
+   ========================================== */
+.wcu-card {
+  background-color: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  transition: var(--transition-normal);
+}
+
+.wcu-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary);
+}
+
+.wcu-icon {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.wcu-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.wcu-desc {
+  font-size: 0.9rem;
+  color: var(--dark-text-muted);
+}

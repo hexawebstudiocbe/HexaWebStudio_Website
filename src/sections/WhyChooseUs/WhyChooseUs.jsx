@@ -1,5 +1,6 @@
 import React from 'react';
 import { DollarSign, Search, Zap, HeartHandshake } from 'lucide-react';
+import './WhyChooseUs.css';
 
 export default function WhyChooseUs() {
   const cards = [

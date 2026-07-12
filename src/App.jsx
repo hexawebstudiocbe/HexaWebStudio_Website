@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
-import FloatingWhatsapp from './components/FloatingWhatsapp';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import FloatingWhatsapp from './components/FloatingWhatsapp/FloatingWhatsapp';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';

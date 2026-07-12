@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { X, ExternalLink, Calendar, User, Eye, Layers } from 'lucide-react';
 
 // Import local image assets compiled in Phase 2
-import gymImg from '../assets/gym.png';
-import salonImg from '../assets/salon.png';
-import restaurantImg from '../assets/restaurant.png';
-import clinicImg from '../assets/clinic.png';
-import schoolImg from '../assets/school.png';
+import gymImg from '../../assets/gym.png';
+import salonImg from '../../assets/salon.png';
+import restaurantImg from '../../assets/restaurant.png';
+import clinicImg from '../../assets/clinic.png';
+import schoolImg from '../../assets/school.png';
+import './Portfolio.css';
 
 export default function Portfolio() {
   const [activeFilter, setActiveFilter] = useState('all');

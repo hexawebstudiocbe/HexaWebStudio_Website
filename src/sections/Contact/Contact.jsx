@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, MessageSquare, CheckCircle, Send } from 'lucide-react';
+import './Contact.css';
 
 const InstagramIcon = ({ size = 20 }) => (
   <svg viewBox="0 0 24 24" width={size} height={size} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -129,7 +130,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid-2" style={{ alignItems: 'start' }}>
+        <div className="grid-2" style={{ alignItems: 'stretch' }}>
           {/* Left panel: Info & links */}
           <div className="contact-info-panel reveal reveal-slide-right">
             <div>
@@ -177,7 +178,7 @@ export default function Contact() {
               </h4>
               <div className="contact-social-grid">
                 <a
-                  href="https://wa.me/1234567890?text=Hi%20Hexaweb!%20I'd%20like%20to%20get%20a%20free%20consultation."
+                  href="https://wa.me/919345541741?text=Hi%20Hexaweb!%20I'd%20like%20to%20get%20a%20free%20consultation."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-social-btn"
@@ -276,16 +277,16 @@ export default function Contact() {
                   name="message"
                   value={formData.message}
                   onChange={handleInputChange}
-                  rows="5"
+                  rows="4"
                   className={`form-input ${errors.message ? 'error' : ''}`}
                   placeholder="Tell us what you need (e.g. e-commerce shop, dental clinic website, Local SEO audit)..."
                   required
-                  style={{ resize: 'vertical' }}
+                  style={{ resize: 'none' }}
                 ></textarea>
                 {errors.message && <span className="form-error-msg">{errors.message}</span>}
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
+              <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: 'auto' }}>
                 <Send size={16} />
                 Send Request Details
               </button>

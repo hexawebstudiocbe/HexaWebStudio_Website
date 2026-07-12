@@ -1,6 +1,6 @@
 import React from 'react';
-import Portfolio from '../sections/Portfolio';
-import ScrollToTopOnMount from '../components/ScrollToTopOnMount';
+import Portfolio from '../sections/Portfolio/Portfolio';
+import ScrollToTopOnMount from '../components/ScrollToTopOnMount/ScrollToTopOnMount';
 
 export default function PortfolioPage() {
   return (
