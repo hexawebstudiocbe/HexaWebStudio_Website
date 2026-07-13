@@ -1,0 +1,272 @@
+/* ==========================================
+   Project Details Page Styles
+   ========================================== */
+
+.project-details-section {
+  padding-top: 40px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 30px;
+  transition: var(--transition-fast);
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+  color: var(--primary-hover);
+}
+
+.project-details-header {
+  margin-bottom: 50px;
+}
+
+.project-title-large {
+  font-size: 3rem;
+  margin: 16px 0;
+  line-height: 1.2;
+}
+
+.project-desc-large {
+  font-size: 1.25rem;
+  color: var(--light-text-muted);
+  max-width: 800px;
+  line-height: 1.8;
+}
+
+.project-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.info-card {
+  background: var(--light-card);
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--light-border);
+  box-shadow: var(--shadow-md);
+}
+
+.info-icon {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.info-card h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--light-text-muted);
+  margin-bottom: 8px;
+}
+
+.info-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--light-text-main);
+  margin: 0;
+}
+
+/* ==========================================
+   Mockups Section
+   ========================================== */
+.mockups-section {
+  background: var(--dark-bg);
+  padding: 80px 40px;
+  border-radius: var(--radius-xl);
+  margin-bottom: 80px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.mockups-title {
+  color: var(--white);
+  font-size: 2.25rem;
+  margin-bottom: 60px;
+}
+
+.mockups-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Mockup Images Base Styles */
+.mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+}
+
+/* Laptop Mockup */
+.mockup-laptop-wrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.mockup-laptop {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  background: #1f2937;
+  border-radius: 12px 12px 0 0;
+  border: 16px solid #1f2937;
+  border-bottom-width: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.laptop-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.laptop-base {
+  position: absolute;
+  bottom: -40px;
+  left: -5%;
+  width: 110%;
+  height: 16px;
+  background: #374151;
+  border-radius: 0 0 16px 16px;
+}
+
+.laptop-base::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 6px;
+  background: #4b5563;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Small Devices Container */
+.mockups-small-devices {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Tablet Mockup */
+.mockup-tablet-wrapper {
+  flex: 1;
+  max-width: 400px;
+}
+
+.mockup-tablet {
+  position: relative;
+  width: 100%;
+  padding-bottom: 133%; /* 3:4 Aspect Ratio */
+  background: #1f2937;
+  border-radius: 24px;
+  border: 16px solid #1f2937;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.tablet-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Mobile Mockup */
+.mockup-mobile-wrapper {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.mockup-mobile {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #1f2937;
+  border-radius: 30px;
+  border: 12px solid #1f2937;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-notch {
+  position: absolute;
+  top: -2px;
+  width: 50%;
+  height: 15px;
+  background: #1f2937;
+  border-radius: 0 0 10px 10px;
+  z-index: 2;
+}
+
+.mobile-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+/* ==========================================
+   Call To Action
+   ========================================== */
+.project-details-cta {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.project-details-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .project-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title-large {
+    font-size: 2.25rem;
+  }
+  
+  .project-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mockups-small-devices {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mockup-tablet-wrapper {
+    width: 100%;
+  }
+}

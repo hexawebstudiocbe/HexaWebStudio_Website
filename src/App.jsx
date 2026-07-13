@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
+import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import ContactPage from './pages/ContactPage';
 import useScrollReveal from './hooks/useScrollReveal';
 import './App.css';
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route path="/portfolio/:projectId" element={<ProjectDetailsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
