@@ -59,7 +59,7 @@ export default function ProjectDetailsPage() {
           <div className="mockups-section">
             <h2 className="mockups-title reveal reveal-slide-up">Responsive Design Preview</h2>
             
-            <div className="mockups-container reveal reveal-slide-up reveal-delay-200">
+            <div className="mockups-composition reveal reveal-slide-up reveal-delay-200">
               {/* Laptop Mockup */}
               <div className="mockup-laptop-wrapper">
                 <div className="mockup-laptop">
@@ -70,23 +70,21 @@ export default function ProjectDetailsPage() {
                 </div>
               </div>
               
-              <div className="mockups-small-devices">
-                {/* Tablet Mockup */}
-                <div className="mockup-tablet-wrapper">
-                  <div className="mockup-tablet">
-                    <div className="tablet-screen">
-                      <img src={project.image} alt="Tablet view" className="mockup-img tablet-img" />
-                    </div>
+              {/* Tablet Mockup */}
+              <div className="mockup-tablet-wrapper">
+                <div className="mockup-tablet">
+                  <div className="tablet-screen">
+                    <img src={project.image} alt="Tablet view" className="mockup-img tablet-img" />
                   </div>
                 </div>
+              </div>
 
-                {/* Mobile Mockup */}
-                <div className="mockup-mobile-wrapper">
-                  <div className="mockup-mobile">
-                    <div className="mobile-notch"></div>
-                    <div className="mobile-screen">
-                      <img src={project.image} alt="Mobile view" className="mockup-img mobile-img" />
-                    </div>
+              {/* Mobile Mockup */}
+              <div className="mockup-mobile-wrapper">
+                <div className="mockup-mobile">
+                  <div className="mobile-notch"></div>
+                  <div className="mobile-screen">
+                    <img src={project.image} alt="Mobile view" className="mockup-img mobile-img" />
                   </div>
                 </div>
               </div>
