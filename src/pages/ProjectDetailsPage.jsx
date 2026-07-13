@@ -41,7 +41,7 @@ export default function ProjectDetailsPage() {
           <div className="project-info-grid reveal reveal-slide-up reveal-delay-100">
             <div className="info-card">
               <User size={24} className="info-icon" />
-              <h4>Client</h4>
+              <h4>Project Type</h4>
               <p>{project.client}</p>
             </div>
             <div className="info-card">

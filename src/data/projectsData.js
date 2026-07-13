@@ -13,8 +13,8 @@ export const projects = [
     tagLabel: 'Web Dev',
     image: gymImg,
     shortDesc: 'A premium dark-themed fitness dashboard with membership signups and workout schedule grids.',
-    fullDesc: 'Pulse Fitness Center required a modern, highly energetic web presence to attract new members. We built a fully responsive site featuring animated workout lists, an interactive class schedule tracker, and a user-friendly membership signup portal. Speed index was optimized for high mobile traffic.',
-    client: 'Pulse Gym LLC',
+    fullDesc: 'A pre-designed template tailored for a modern, highly energetic fitness center. It features a fully responsive layout with animated workout lists, an interactive class schedule tracker, and a user-friendly membership signup portal. Speed index is optimized for high mobile traffic.',
+    client: 'Demo Template',
     tech: 'React JS, Custom CSS, Lucide Icons',
     timeline: '3 Weeks'
   },
@@ -26,8 +26,8 @@ export const projects = [
     tagLabel: 'Branding',
     image: salonImg,
     shortDesc: 'An elegant serif-styled landing page with service catalogs and appointment booking integrations.',
-    fullDesc: 'Lumina Salon needed a visual-heavy website to exhibit their styling packages and beauty treatments. We built an elegant, minimal landing page featuring rich galleries, hover pricing menus, and integrated booking shortcuts to streamline client reservations.',
-    client: 'Lumina Beauty Group',
+    fullDesc: 'A pre-designed template crafted for hair and beauty salons. It features an elegant, minimal landing page with rich galleries, hover pricing menus, and integrated booking shortcuts to streamline client reservations.',
+    client: 'Demo Template',
     tech: 'React JS, Custom Grid CSS, Flexbox layouts',
     timeline: '2 Weeks'
   },
@@ -39,8 +39,8 @@ export const projects = [
     tagLabel: 'Web Dev',
     image: restaurantImg,
     shortDesc: 'A gourmet restaurant menu interface and online table reservations booking layout.',
-    fullDesc: 'An immersive, high-contrast website for a luxury fine-dining restaurant. The platform hosts a digital, categorizable food and beverage menu, a reservation booking form with validation, and custom social link pathways to drive foot traffic.',
-    client: 'The Golden Plate Inc.',
+    fullDesc: 'A pre-designed template for luxury fine-dining restaurants. The platform hosts a digital, categorizable food and beverage menu, a reservation booking form with validation, and custom social link pathways to drive foot traffic.',
+    client: 'Demo Template',
     tech: 'React JS, Custom SVG Vectors, Form Validation',
     timeline: '3 Weeks'
   },
@@ -52,8 +52,8 @@ export const projects = [
     tagLabel: 'SEO',
     image: clinicImg,
     shortDesc: 'A clean medical portal layout highlighting doctor bios, healthcare plans, and clinic schedules.',
-    fullDesc: 'Apex Medical wanted to improve local search results and patient check-ins. We built a responsive, highly accessible clinic portal optimized for core web vitals and structured Google Schema markup. This drastically increased local search visibility in their target area.',
-    client: 'Apex Healthcare Partners',
+    fullDesc: 'A pre-designed template structured for medical clinics and healthcare partners. Built as a responsive, highly accessible clinic portal optimized for core web vitals and Google Schema markup to increase local search visibility.',
+    client: 'Demo Template',
     tech: 'React JS, Schema SEO Metadata, IntersectionObserver',
     timeline: '4 Weeks'
   },
@@ -65,8 +65,8 @@ export const projects = [
     tagLabel: 'Web Dev',
     image: schoolImg,
     shortDesc: 'A vibrant educational portal with news reels, academic programs listings, and admission templates.',
-    fullDesc: 'A welcoming academic hub for students and parents. We designed a clear grid system highlighting educational tracks, an events calendar, downloadable admission documents, and a student inquiry submission system.',
-    client: 'Horizon Education Trust',
+    fullDesc: 'A pre-designed template serving as a welcoming academic hub for schools and educational trusts. It includes a clear grid system highlighting educational tracks, an events calendar, downloadable admission documents, and a student inquiry submission system.',
+    client: 'Demo Template',
     tech: 'React JS, CSS Keyframes, Custom Transitions',
     timeline: '4 Weeks'
   }
