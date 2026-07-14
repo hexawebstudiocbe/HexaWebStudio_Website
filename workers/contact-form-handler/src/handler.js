@@ -20,6 +20,7 @@ export async function handleRequest(request, env) {
     });
   }
 
+  
   // Only allow POST
   if (request.method !== "POST") {
     return new Response(
