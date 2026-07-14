@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, MessageSquare, CheckCircle, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, MessageSquare, CheckCircle, Send, AlertCircle } from 'lucide-react';
 import './Contact.css';
 
 const InstagramIcon = ({ size = 20 }) => (
@@ -29,6 +29,8 @@ export default function Contact() {
 
   const [errors, setErrors] = useState({});
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState(null);
 
   const validate = () => {
     const newErrors = {};
@@ -71,29 +73,54 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Mock successful form submission
-      console.log("Form Submitted Successfully:", formData);
-      setIsSuccess(true);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        businessName: '',
-        message: ''
-      });
-      setErrors({});
+      setIsSubmitting(true);
+      setSubmitError(null);
+      setIsSuccess(false);
 
-      // Clear success notification after 5 seconds
-      setTimeout(() => {
-        setIsSuccess(false);
-      }, 5000);
+      const workerUrl = import.meta.env.VITE_WORKER_URL || '';
+
+      try {
+        const response = await fetch(workerUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          setIsSuccess(true);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            businessName: '',
+            message: ''
+          });
+          setErrors({});
+          
+          // Clear success notification after 5 seconds
+          setTimeout(() => {
+            setIsSuccess(false);
+          }, 5000);
+        } else {
+          setSubmitError(result.error || 'Failed to submit form. Please try again.');
+        }
+      } catch (error) {
+        setSubmitError('Unable to connect to the server. Please check your network connection.');
+        console.error('Submission error:', error);
+      } finally {
+        setIsSubmitting(false);
+      }
     }
   };
 
@@ -207,6 +234,13 @@ export default function Contact() {
               </div>
             )}
 
+            {submitError && (
+              <div className="form-error-alert">
+                <AlertCircle size={22} />
+                <span>{submitError}</span>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} noValidate>
               <div className="form-group-row">
                 <div className="form-group">
@@ -286,9 +320,14 @@ export default function Contact() {
                 {errors.message && <span className="form-error-msg">{errors.message}</span>}
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ width: '100%', marginTop: 'auto' }}>
+              <button 
+                type="submit" 
+                className="btn btn-primary" 
+                style={{ width: '100%', marginTop: 'auto' }} 
+                disabled={isSubmitting}
+              >
                 <Send size={16} />
-                Send Request Details
+                {isSubmitting ? 'Sending Request...' : 'Send Request Details'}
               </button>
             </form>
           </div>

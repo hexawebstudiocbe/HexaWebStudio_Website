@@ -1,0 +1,13 @@
+{
+  "name": "contact-form-handler",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker contact form handler written in JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
